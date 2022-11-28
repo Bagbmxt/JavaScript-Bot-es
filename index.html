@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body id="site">
+  <center> <h3> Javascript </h3> </center> 
+ 
+    <script type="text/javascript" >
+      function ola()
+      { alert(" 'Olá, Bem-vindo ao Site.' "); no.style.color = '#FF0000'; } 
+    </script> 
+    <input type="button" value="Clique para aparecer Script Olá" onclick="ola();" > 
+    <br>
+      
+    <script type="text/javascript" > function elemento()
+      { var no = document.getElementById("titulo"); no.style.color = '#FF0000'; }
+       </script> </head> 
+       <body> <h3 id='titulo'>Botão Muda a cor da Fonte Para Vermelho </h3>
+         <input type="button" value="Botão Muda a Cor" onclick="elemento();"> 
+    
+ 
+    <h3 id="tituloamarelo">Testando a Cor de Fonte Pagina = Amarelo</h3>
+    <input type="button" value="Botão Muda a Cor Amarelo" onclick="tituloamarelo();"> 
+
+
+    <h3 id="tituloazul">Testando a Cor de Fonte Pagina = Azul</h3>
+    <input type="button" value="Botão Muda a Cor Amarelo" onclick="tituloazul();"> 
+
+    <h3 id="titulopink">Testando a Cor de Fonte Pagina = pink</h3>
+    <input type="button" value="Botão Muda a Cor Pink" onclick="titulopink();"> 
+
+    <h3 id="titulopurple">Testando a Cor de Fonte Pagina = purple</h3>
+    <input type="button" value="Botão Muda a Cor purple" onclick="titulopurple();"> 
+
+
+    <id='site'> 
+      <h3>Botão Mudar a cor de fundo Para Verde </h3>
+  <input type="button" value="Botão Muda Cor de Fundo 'VERDE'" onclick="fundoverde();" >  
+  
+  <id='site'> 
+    <h3>Botão Mudar a cor de fundo Para Azul </h3>
+<input type="button" value="Botão Muda Cor de Fundo 'AZUL'" onclick="fundoazul();" >  
+
+<id='site'> 
+  <h3>Botão Mudar a cor de fundo Para Vermelho</h3>
+<input type="button" value="Botão Muda Cor de Fundo 'VERMELHO'" onclick="fundovermelho();" >  
+
+<id='site'> 
+  <h3>Botão Mudar a cor de fundo Para Preto </h3>
+<input type="button" value="Botão Muda Cor de Fundo 'PRETO'" onclick="fundopreto();" > 
+
+<id='site'> 
+  <h3>Botão Mudar a cor de fundo Para Laranja </h3>
+<input type="button" value="Botão Muda Cor de Fundo 'LARANJA'" onclick="fundolaranja();" >  
+
+ 
+
+<h3 id="fonte">Botão Muda a Fonte Style Para 'sans-serif' </h3>
+<input type="button" value="troca" 
+onclick="document.getElementById('fonte').style.fontFamily='sans-serif';">
+
+
+<h3 id="trocafontetahoma">Botão Muda a Fonte Style Para 'tahoma': </h3>
+<input type="button" value="troca" onclick="trocafontetahoma();" > 
+
+<h3 id="trocaf">Botão Muda a Fonte Style Para 'Arial': </h3>
+<input type="button" value="troca" onclick="trocafontearial();" > 
+
+<h3 id="troc">Botão Muda a Fonte Style Para 'Verdana' </h3>
+<input type="button" value="troca" onclick="trocafonte();" > 
+
+<h3 id="trocafonti">Botão Muda a Fonte Style Para 'Calibri': </h3>
+<input type="button" value="troca" onclick="trocafonttime();" > 
+
+<br><br>
+
+<script>
+
+var valor = 5;
+for(var i = 1; i < 11; i++) {
+  document.write(valor + " x " + i  + " = " + (valor * 1) +"<br>");
+}
+</script>
+
+
+
+<br><br><br>
+<script>
+function tabuada(...args) {
+  for (const number of args) {
+    construirTabuada(number);
+  }
+}
+
+function construirTabuada(numero) {
+  let color_td; // apenas para estilizacao.
+
+  document.write("<table border='1px' style='margin: 20px'>"); // comeca a criar uma tabela.
+
+  color_td = "#ccc";
+  document.write(`<thead>Tabuada do numero: ${numero}</thead>`); // cria um titulo para a tabela baseado no numero.   
+  document.write("<td style='width:30px;background-color: " + color_td + "'>Multiplicando</td>");
+
+  for (let i = 1; i < 10; i++) {
+    document.write("<td style='width:30px;background-color: " + color_td + "'>" + i + "</td>");
+  }
+
+  document.write("<tr style='height:30px;'>");
+
+  color_td = "#fff";
+  document.write("<td style='width:30px;background-color: " + color_td + "'>Resultado</td>");
+
+  for (let j = 1; j < 10; j++) {
+    document.write("<td style='width:30px;background-color:" + color_td + "'>" + j * numero + "</td>");
+  }
+
+  document.write("</tr>");
+
+  document.write("</table>"); // termina de montar a tabela.
+}
+ 
+tabuada(5); // chamada de teste.
+</script>
+<br><br><br>
+
+
+<script type="text/javascript">
+
+function factorialize(num) { 
+  var calculo = 1;
+  for (let i = 1; i <= num; i++) {
+    calculo = calculo * i;
+    
+  }
+//console.log("calculo" + calculo)
+  document.getElementById('resultadofatorial').value=calculo
+}
+//factorialize(3);
+  
+</script>
+
+<input type="button" value="02" onclick="factorialize(2);" > 
+<input type="button" value="06" onclick="factorialize(6);" > 
+<input type="button" value="08" onclick="factorialize(8);" > 
+<input type="button" value="10" onclick="factorialize(10);" > 
+
+<label for="resultadofatorial">Resultado fatorial</label>
+<input type="text" id="resultadofatorial" readonly>
+
+
+
+<script type="text/javascript" src="arquivo.js"></script>
+</body>
+</html>
+
+
+ <!-- Control + ; -->
